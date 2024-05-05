@@ -10,7 +10,6 @@ import lefticon2 from "./images/leftheaderIcon2.svg";
 import FirstScreen from "./screen1";
 import SecondScreen from "./screen2";
 import { HiChartBar } from "react-icons/hi";
-import { PiSquareHalfBottomLight } from "react-icons/pi";
 import { PiSquareHalfBottomBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
 

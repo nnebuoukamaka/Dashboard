@@ -4,6 +4,10 @@ import { GiShoppingBag } from "react-icons/gi";
 import { RiNetflixFill } from "react-icons/ri";
 import { BsFillTaxiFrontFill } from "react-icons/bs";
 import Header from "./header";
+import { HiChartBar } from "react-icons/hi";
+import { PiSquareHalfBottomBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
+
 
 import "./styles/screen2.css";
 
@@ -15,6 +19,36 @@ function SecondScreen() {
         <div className="screen2-header">
         <Header />
         </div>
+        <div className="toggle">
+            <span className="toggleicon-1">
+              <Link to="/">
+                <HiChartBar
+                  style={{
+                    color: "rgba(255, 255, 255, 1)",
+                    width: "13.75px",
+                    height: "12.3px",
+                    position:'relative',
+                    top:'4px',
+                    left:'17px'
+                  }}
+                />
+              </Link>{" "}
+            </span>
+            <span className="toggleicon-2">
+              <Link to="/screen2">
+                <PiSquareHalfBottomBold
+                  style={{
+                    color: "rgba(187, 190, 217, 1)",
+                    width: "15px",
+                    height: "13px",
+                    position:'relative',
+                    top:'5px',
+                    left:'17px'
+                  }}
+                />
+              </Link>
+            </span>
+          </div>
       <section className="screen2-top"></section>
       <section className="screen2-middle"></section>
       <section className="screen2-end">
