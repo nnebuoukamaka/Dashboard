@@ -4,46 +4,68 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding: 0.2rem calc(100vw - 1000px)/2; */
   z-index: 12;
 }
 
 .navbar-menu {
-    width: 75%;
+  width: 80%;
 
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 .navbar-menu-list {
   display: flex;
   align-items: center;
   justify-content: space-around;
   list-style: none;
+
+  
 }
 
 .navbar-menu a {
   color: #808080;
   text-decoration: none;
-  /* margin-left: 10px; */
-
   cursor: pointer;
   &.active {
     color: #000000;
   }
 }
 
-.navbar-end{
-    width: 20%;
+.navbar-end {
+  width: 10%;
+/* border: 1px solid red; */
+  @media screen and (max-width: 768px) {
+    width: auto;
+    position: relative;
+    right: -140px;
+  }
 }
 
 .navbar-end-list {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  margin-right: 24px;
+
   @media screen and (max-width: 768px) {
-    display: none;
+    justify-content: flex-end;
   }
 }
 
+.bell{
+  position:relative;
+  top:4px;
+  right:10px;
+
+  @media screen and (max-width:768px) {
+    right: 15px;
+  }
+}
+
+.p-avatar{
+  width:25.26px;
+  height:24.53px;
+}
 .search-input {
   width: 420.57px;
   height: 32.69px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import bell from './images/bellIcon.svg'
-import avatar from './images/avatar.svg'
+import Pavatar from './images/screen1/dashboard-avatar.jpg'
 import Search from './search'
 import './styles/header.css'
 
@@ -30,16 +30,16 @@ function Header() {
                 </li>
               </ul>
                 </div>
-            <div className='navbar-end'>
+              <div className='navbar-end'>
               <ul className='navbar-end-list'>
                     <li>
                       <a href='#'>
-                    <img src={bell} alt='notification'/>
+                    <img src={bell} alt='notification' className='bell' />
                       </a>
                     </li>
                     <li>
                     <a href='#'>
-                Contacts
+                <img src={Pavatar}alt='profile' className='p-avatar'/>
                 </a> 
                     </li>
               </ul>

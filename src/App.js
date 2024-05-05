@@ -9,7 +9,6 @@ function App() {
       <div className='app'>
       <Routes>
         <Route  path = "/" element = {<Home/>}></Route>
-        <Route path= "/screen" element ={<FirstScreen/>}></Route>
         <Route path = '/screen2' element={<SecondScreen/>}></Route>
       </Routes>
       </div>
